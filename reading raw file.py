@@ -28,4 +28,5 @@ for i in t.keys():
 t.set_index(f3[0].values, inplace=True)
 t.replace(r'^\s*$', np.nan, regex=True,inplace=True)
 t.dropna(axis=0, how='all',inplace=True)
+t.to_csv('NamesToMoves.csv')
 print()
